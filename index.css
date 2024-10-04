@@ -1,0 +1,13 @@
+label {
+    width: 2em;
+    height: 2em;
+}
+.questions{
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(8, 75, 77);
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
