@@ -11,9 +11,25 @@
     <main>
         <h2>Fill out the form to sign up</h2>
     </main>
-    <div class="questions">Please answer the questions below
-     <label for="first">Frist name/last name </label>
-        <input type="text" id="first" placeholder="Type your name here"/>
-    </div>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="name" />
+        <label for="date">Date:</label>
+        <input type="date" name="date" />
+        <label for="age">Age:</label>
+        <input type="number">
+        <label for="email">Email</label>
+        <input type="email"/>
+          <select name="food" id="food">
+            <option value="Fisk">Fish</option>
+            <option value="Kött">Meat</option>
+            <option value="Vegetarian">Vegetariskt</option>
+          </select>
+          <label for="allergi">If you have any allergy, please type below</label>
+         <input type="text" />
+         <button type="submit">Skicka</button>
+        <button type="reset">Rensa</button>
+    </form>
+</main>
 </body>
 </html>
