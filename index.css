@@ -7,7 +7,7 @@ label {
     font-style: italic;
     color: rgb(8, 75, 77);
 }
-body{
+form{
     display: flex;
     flex-direction: column;
 }
