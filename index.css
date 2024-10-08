@@ -17,10 +17,11 @@ h2{
     font-size: 20px;
     text-align: center;
 }
-.artonde{
+.kort-info{
     font-size: 18px;
     font-style: italic;
     text-align: left;
+    color: purple
 }
 p{
     display: flex;
