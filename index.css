@@ -1,13 +1,33 @@
-label {
-    width: 2em;
-    height: 2em;
+h1{
+    color: rgb(36, 28, 43);
+    font-size: 36px;
+    text-align: center;
 }
-.questions{
-    font-size: 14px;
-    font-style: italic;
-    color: rgb(8, 75, 77);
+h2{
+    color: rgb(54, 30, 77);
+    font-size: 16px;
+    margin-bottom: 2em;
+
 }
 form{
+    border: solid orange;
+   
+}
+button{
+    width: 50%;
+    height: 100%;
+    border-radius: 8%;
+    border-color: rgb(96, 87, 87);
+    margin: 0.5em;
+    margin-top: 1em;
+    transition: all 0.2sec ease-in-out;
+}
+button:hover{
+    background-color: beige;
+    cursor: pointer;
+
+}
+.seminar-day{
     display: flex;
-    flex-direction: column;
+    flex-wrap:;
 }
