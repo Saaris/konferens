@@ -27,3 +27,7 @@ button:hover{
     cursor: pointer;
 
 }
+.seminar-day{
+    display: flex;
+    flex-wrap:;
+}
