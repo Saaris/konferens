@@ -1,3 +1,15 @@
+body{
+    display: flex;
+    flex: 1;
+    font-family: poppins, sans-serif;
+    background: linear-gradient( to bottom left,
+    #8b22a0,
+    rgb(56, 14, 90),
+    rgb(40, 15, 38));
+  width: 100%;
+  height: 150vh;
+
+}
 h1{
     color: rgb(36, 28, 43);
     font-size: 36px;
@@ -15,15 +27,48 @@ h3{
     }
 h4{
     margin: 0;
-}
 
 }
-form{
-    border: solid orange;
-   
+.hela-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+form{
+    border: 0.3em solid rgb(205, 139, 17);
+    padding: 1em;
+    margin: 1em;
+    margin-top: 10em;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 4%;
+    
+}
+.flex-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.choose-food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.type-allergy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 button{
-    width: 50%;
+    max-width: 30%;
     height: 100%;
     border-radius: 8%;
     border-color: rgb(96, 87, 87);
@@ -41,6 +86,7 @@ button:hover{
     flex-wrap: wrap;
     max-width: 100%;
     padding-left: 2em;
+    color: rgb(205, 139, 17);
 
 }
 .seminars-wrapper{
@@ -48,4 +94,32 @@ button:hover{
     grid-template-columns: repeat(3,1fr);
     margin: 1em;
     padding: 1em;
+}
+.type-allergy{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    font-size: 20px;
+    color: rgb(205, 139, 17)
+}
+#allergy{
+    max-width: 200px;
+}
+input{
+    margin-left: 1em;
+}
+select{
+    margin-left: 1em;
+}
+h5{
+    height: 40px;
+    background-color: rgb(205, 139, 17);
+    padding: 0;
+    text-align: center;
+    
 }
