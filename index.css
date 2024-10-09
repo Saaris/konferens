@@ -3,7 +3,7 @@ body{
     flex: 1;
     font-family: poppins, sans-serif;
     background: linear-gradient( to bottom left,
-    #8b22a0,
+    rgb(80, 63, 95),
     rgb(56, 14, 90),
     rgb(40, 15, 38));
   width: 100%;
@@ -11,22 +11,27 @@ body{
 
 }
 h1{
-    color: rgb(36, 28, 43);
+    color: rgb(242, 146, 12);
     font-size: 36px;
     text-align: center;
 }
 h2{
-    color: rgb(54, 30, 77);
+    color: rgb(242, 146, 12);
     font-size: 16px;
     margin-bottom: 2em;
     text-align: center;
     padding-top: 2em;
 }
 h3{
-      
-    }
+    color: rgb(242, 146, 12)
+}
 h4{
     margin: 0;
+    color: rgb(242, 146, 12)
+}
+p{
+    color: rgb(249, 183, 91)
+
 
 }
 .hela-form{
@@ -36,13 +41,17 @@ h4{
     justify-content: center;
 }
 form{
-    border: 0.3em solid rgb(205, 139, 17);
+    border: 0.3em solid rgb(242, 146, 12);
     padding: 1em;
     margin: 1em;
     margin-top: 10em;
     width: fit-content;
     font-size: 20px;
     border-radius: 4%;
+    background: linear-gradient( to bottom left,
+    rgb(80, 63, 95),
+    rgb(56, 14, 90),
+    rgb(40, 15, 38));
     
 }
 .flex-panel{
@@ -86,7 +95,7 @@ button:hover{
     flex-wrap: wrap;
     max-width: 100%;
     padding-left: 2em;
-    color: rgb(205, 139, 17);
+    color: rgb(242, 146, 12);
 
 }
 .seminars-wrapper{
@@ -94,6 +103,10 @@ button:hover{
     grid-template-columns: repeat(3,1fr);
     margin: 1em;
     padding: 1em;
+    background: linear-gradient( to bottom left,
+    rgb(80, 63, 95),
+    rgb(56, 14, 90),
+    rgb(40, 15, 38));
 }
 .type-allergy{
     display: flex;
@@ -105,7 +118,7 @@ label{
     flex-direction: column;
     margin: 0.5em;
     font-size: 20px;
-    color: rgb(205, 139, 17)
+    color: rgb(242, 146, 12)
 }
 #allergy{
     max-width: 200px;
@@ -118,7 +131,7 @@ select{
 }
 h5{
     height: 40px;
-    background-color: rgb(205, 139, 17);
+    color: rgb(242, 146, 12);
     padding: 0;
     text-align: center;
     
