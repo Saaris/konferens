@@ -29,5 +29,9 @@ button:hover{
 }
 .seminar-day{
     display: flex;
-    flex-wrap:;
+    flex-wrap: wrap;
+}
+.seminars-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
