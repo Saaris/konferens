@@ -1,39 +1,29 @@
-body{
-    display: flex;
-    flex-direction: column;
-}
-header{
-    max-width: 100%;
-    min-height: 100px;
-    background-color: aquamarine;
-}
 h1{
-    color: rgb(115, 31, 194);
+    color: rgb(36, 28, 43);
     font-size: 36px;
     text-align: center;
 }
 h2{
-    color: blueviolet;
-    font-size: 20px;
-    text-align: center;
+    color: rgb(54, 30, 77);
+    font-size: 16px;
     margin-bottom: 2em;
+
 }
-.kort-info{
-    font-size: 18px;
-    font-style: italic;
-    text-align: left;
-    color: purple
+form{
+    border: solid orange;
+   
 }
-p{
-    display: flex;
-    flex-direction: column;
+button{
+    width: 50%;
+    height: 100%;
+    border-radius: 8%;
+    border-color: rgb(96, 87, 87);
+    margin: 0.5em;
+    margin-top: 1em;
+    transition: all 0.2sec ease-in-out;
 }
-.artonde{
-    color: brown;
-}
-.nittonde{
-    color: grey;
-}
-.tjugonde{
-    color: darkblue;
+button:hover{
+    background-color: beige;
+    cursor: pointer;
+
 }

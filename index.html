@@ -1,86 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bättre Webb</title>
     <link rel="stylesheet" href="index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-    <header>
-        <img src="\image-asset.jpeg" alt="bild gothia towers" width="400" height="100">
-    </header>   
+<body
     </main>
-      <h1>Bättre Webb</h1>
-      <h2>During this three days we will present 10 semninaries at Gothia Towers in Gothenburg.
-        <br>you can also apply for just one or two days days.</h2>
-        <div class="kort-info">The seminaries will be held by three lecturer <strong>Annie, Emma and Johan.</strong>
-         <br>Annie is a Frontend-developer with experience<br>on modern frontend-framework as React och Vue.js..<br>
-         <br>Emma, a Fullstack developer with long experience in UX and accessability for the webb.
-         <br>Johan, also a frontend developer with good knowledge in JavaScript till TypeScript.
-         <br>For application we need you to sign up, see page below.
-            <div class="artonde"><strong>18/10 we have the following seminaries:</strong>
-            <p><b>Modern JavaScript Frameworks-React, Vue och Svelte</b><br>
-                A comparison of the most popular frontend frameworks: React, Vue, and Svelte.<br>
-                Pros and cons of each framework depending on project size and needs.<br>
-                Practical examples of how to build a simple application in each framework.</p>
-            <p><b>Mastering Responsive Web Design</b><br>
-                Deep dive into media queries, fluid grids, and flexible images.<br>
-                Learn about mobile-first design principles.<br>
-                Explore CSS Grid and Flexbox to create modern, responsive layouts.</p>
-            <p><b>Introduction to TypeScript for Frontend Developers</b><br>
-                Learn the basics of TypeScript and how it integrates
-                <br> with JavaScript frameworks like React and Vue.<br></p>
-                <p><b>Testing Frontend Applications with Jest and Cypress</b><br>
-                    Introduction to automated testing for frontend applications.<br>
-                    Learn about unit testing with Jest and end-to-end testing with Cypress.</p></div>
-            <div class="nittonde">19/10 we have the following seminars:>
-                <p><b>Web Performance Optimization-Techniques and Tools</b><br>
-                Strategies for improving page load times, such as code-splitting,
-                <br> lazy loading, and reducing render-blocking resources<br>
-                learn about the importance of caching and image optimization.</p>
-                <p><b>Building Accessible Websites-Best Practices</b><br>
-                    Introduction to WCAG guidelines and why accessibility matters.</p>
-                    <p><b>Component-Driven Development with Storybook</b><br>
-                        Learn how to build, test, and document frontend components in isolation with Storybook.
-                        <br>Explore component-driven development (CDD) principles<br> and how they improve code reuse and collaboration.
-                        <br>Integrate Storybook with frameworks like React, Vue, and Angular.</p></div>
-            <div class="tjugonde">20/10 we have the following seminars:
-            <p><b>Server-Side Rendering with Next.js</b><br>
-                Introduction to Next.js and its capabilities for server-side rendering (SSR).<br>
-                Learn how SSR can improve SEO and initial load performance.<br>
-                Explore dynamic routing, static site generation (SSG), and API routes with Next.js.</p>
-                <p><b>CSS-in-JS: Styled Components and Emotion</b><br>
-                    Overview of CSS-in-JS libraries like Styled Components and Emotion.<br>
-                    Benefits of component-level styling and how to manage dynamic styling in JavaScript.</p>
-                    <p><b>Introduction to WebAssembly for Frontend Developers</b><br>
-                        Discover how WebAssembly can be used to improve performance in frontend applications.<br>
-                        Learn how to integrate WebAssembly with JavaScript.</p>
-                    </div>
-            <h3>Fill out the form to sign up</h3>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" placeholder="name" />
-                    <label for="date">Date:</label>
-                    <input type="date" name="date" />
-                    <label for="age">Age:</label>
-                    <input type="number">
-                    <label for="email">Email</label>
-                    <input type="email"/>
-                    <label for "food">Preferred food</label>
-                    <input type="image" src="istockphoto-1088473044-612x612.jpg"
-                     src="3422206-lax-fisk-tecknad-klistermarke-gratis-vector.jpg" 
-                     src="smakliga-grönsaker-för-illustration-21796440.jpg" alt="matbilder" width="100" height="50">
-                     <select name="food" id="food">
-                        <option value="Fisk">Fish</option>
-                        <option value="Kött">Meat</option>
-                        <option value="Vegetarian">Vegetarian</option></select>
-                    <label for="allergi">If you have any allergy, please type below</label>
-                    <input type="text" />
-            <button type="submit">Skicka</button>
-         <button type="reset">Rensa</button>
-       </form>
-    </main>
+    <h1>Bättre Webb</h1>
+    <h2>En tre dagars konferens med 10 olika seminarier riktade till<br>
+        både studerande samt redan utbildade Frontend utvecklare.
+        <br>Konferensen äger rum datumen 18-20/10 i Gothia Towers i Göteborg.<br>
+        Om man inte har möjlighet att delta alla tre dagar<br>
+        är det även möjligt att anmäla sig till enbart en eller två dagar.
+        <br>För anmälan, vänligen fyll i formuläret nedan.</h2>
+        <section class="seminars-wrapper">
+            <section class="seminar-day">
+                <h3>18/10 har vi följande seminarier</h3>
+                <article class="seminar-info">
+                    <h4>Modern JavaScript Frameworks-React, Vue och Svelte</h4>
+                    <p>En jämförelse av de mest populära frontend-ramverken: React, Vue och Svelte.</p>
+                </article>
+                <article class="seminar-info">
+                    <h4>Bemästra responsiv webbdesign</h4>
+                    <p>Lär dig mer om designprinciper för mobila enheter.</p>
+                </article>
+                <article class="seminar-info">
+                <h4>Introduktion till TypeScript för frontend-utvecklare</h4>
+                <p></p>Lär dig grunderna i TypeScript och hur det
+                <br>integreras med JavaScript-ramverk som React och Vue..</p>
+                </article>
+                <article class="seminar-info">
+                <h4>Testa frontend-applikationer med Jest och Cypress</h4>
+                    <p>Introduktion till automatiserad testning för frontend-applikationer.</p>
+                </article>
+                <h3>19/10 har vi följande seminarier:</h3>
+                <article class="seminar-info">
+                <h4>Optimering av webbprestanda - Tekniker och verktyg</h4>
+                    <p>Strategier för att förbättra sidladdningstider,
+                        <br>t.ex. koddelning, lat inläsning och
+                        <br> minskning av renderingsblockerande resurser.</p>
+                </article>
+                <article class="seminar-info">
+                <h4>Bygga tillgängliga webbplatser-bästa teknikerna</h4>
+                    <p>Introduktion till WCAG-riktlinjerna
+                        <br> och varför tillgänglighet är viktigt.</p>
+                </article>
+                    <article class="seminar-info">
+                <h4>Komponentdriven utveckling med Storybook</h4>
+                    <p>Lär dig hur du bygger, testar och dokumenterar
+                        <br>frontend-komponenter isolerat med Storybook.</p>
+                </article>
+                <h3>20/10 har vi följande seminarier:</h3>
+                <article class="seminar-info">
+                <h4>Rendering på serversidan med Next.js</h4>
+                    <p>Lär dig hur SSR kan förbättra SEO<br>och initial laddningsprestanda.</p>
+                </article>
+                <article class="seminar-info">
+                <h4>CSS-i Javascript</h4>
+                <p>Översikt över CSS-in-JS-bibliotek</p>
+                </article>
+                <article class="seminar-info">
+                <h4>Introduktion till WebAssembly för frontend-utvecklare</h4>
+                <p>Upptäck hur WebAssembly kan användas för
+                    <br>att förbättra prestanda i frontend-applikationer.</p>
+                </article>
+            </section>
+        </section>
+        <form>
+            <p class="rubrik-form">Fill out the form to sign up</p>
+                <label for="name">Namn:</label>
+                <input type="text" placeholder="name" />
+                <label for="date">Date:</label>
+                <input type="date" name="date" />
+                <label for="age">Age:</label>
+                <input type="number">
+                <label for="email">Email</label>
+                <input type="email" />
+                <label for="food">Preferred food</label>
+                <input type="checkbox">
+                <select name="food" id="food">
+                    <option value="Fisk">Fish</option>
+                    <option value="Kött">Meat</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                </select>
+                <label for="allergi">If you have any allergy, please type below</label>
+                <input type="text" />
+                <button type="submit">Skicka</button>
+                <button type="reset">Rensa</button>
+        </form>
+        </main>
 </body>
+
 </html>
