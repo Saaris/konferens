@@ -7,24 +7,25 @@
     <title>Bättre Webb</title>
     <link rel="stylesheet" href="index.css" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-</header>
-<nav>
-    <ul>
-        <li><a href="#">info</a></li>
-        <li><a href="#">anmälan</a></li>
-        <li><a href="#">Kontakt</a></li>
-    </ul>
-</nav>
-</header>
+</head>
 <body>
-    <img src="image/gothia-green.jpg" alt="Gothia Towers" width="1000" height="500">
+    <header>
+        <nav>
+            <h1>Bättre Webb</h1>
+            <ul>
+                <li><a href="#sem-info">Info</a></li>
+                <li><a href="#register">Anmälan</a></li>
+                <li><a href="#register">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 <main>
+    <img src="image/gothia-green.jpg" class="gothia-image" alt="Gothia Towers" width="1000" height="500">
     <div class="wrapper-konferens">
-    <h1>Bättre Webb</h1>
     <section class="seminars-wrapper">
         <section class="seminar-day">
             <h3>Seminarier 18/10</h3>
-            <article class="seminar-info">
+            <article class="seminar-info" id="sem-info">
                 <h4>Modern JavaScript Frameworks-React, Vue och Svelte</h4>
                 <p>En jämförelse av de mest populära frontend-ramverken: React, Vue och Svelte.</p>
             </article>
@@ -87,14 +88,17 @@
             </article>
         </section>
     </section>
+    
     <section class="konf-bild-text">
-    <h2>En tre dagars konferens med 10 olika seminarier riktade till<br>
-        Frontend utvecklare. Konferensen äger rum datumen 18-20/10 på<br>
-        Gothia Towers i Göteborg. Det möjligt att anmäla sig till enbart<br>
-        en eller två dagar. För anmälan, vänligen fyll i formuläret nedan.</h2>
+        <div class="image-container">
+            <h2>En tre dagars konferens med 10 olika seminarier riktade till<br>
+                Frontend utvecklare. Konferensen äger rum datumen 18-20/10 på<br>
+                Gothia Towers i Göteborg. Det möjligt att anmäla sig till enbart<br>
+                en eller två dagar. För anmälan, vänligen fyll i formuläret nedan.</h2>
     <img src="image/d8c78cb1-3ce3-4c8b-b63d-4c50fd5f97a7.jpg" alt="konferenssal" width="1000" height="500"> 
+        </div>
 </section>
-        <form>
+        <form id="register">
             <div class="flex-container"></div>
                 <h5>Fyll i formulär för anmälan</h5>
             <div class="flex-panel">
