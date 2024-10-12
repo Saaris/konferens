@@ -28,7 +28,7 @@ nav{
     justify-content: space-between;
     padding-left: 3em;
     padding-right: 3em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--b-shadow);
     
 }
 ul{
@@ -86,13 +86,13 @@ h4{
     justify-content: center;
 }
 form{
-    border: 0.1em solid rgb(242, 146, 12);
+    border: 1px solid rgb(242, 146, 12);
     padding: 1em;
     margin: 1em;
     width: fit-content;
     font-size: 20px;
     border-radius: var(--b-radius);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--b-shadow);
     background: var(--bg-color);
     
 }
@@ -140,7 +140,7 @@ button:hover{
     grid-template-columns: 1fr;
     gap: 0.3em;
     border-radius: var(--b-radius);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--b-shadow);
 
 }
 .seminars-wrapper{
@@ -210,6 +210,9 @@ a{
 }
 :root{
     --b-radius: 4px;
+}
+:root{
+    --b-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
  img {
     border-radius: var(--b-radius);
