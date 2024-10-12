@@ -29,6 +29,7 @@ nav{
     padding-left: 3em;
     padding-right: 3em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 ul{
     display: flex;
@@ -90,7 +91,7 @@ form{
     margin: 1em;
     width: fit-content;
     font-size: 20px;
-    border-radius: 4px;
+    border-radius: var(--b-radius);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: var(--bg-color);
     
@@ -119,7 +120,7 @@ form{
 button{
     max-width: 30%;
     height: 100%;
-    border-radius: 8%;
+    border-radius: var(--b-radius);
     border-color: rgb(96, 87, 87);
     margin: 0.5em;
     margin-top: 1em;
@@ -136,9 +137,9 @@ button:hover{
     padding-left: 1em;
     color: rgb(21, 20, 20);
     display: grid;
-    grid-template-columns: repeat(4,1fr, 1fr);
+    grid-template-columns: 1fr;
     gap: 0.3em;
-    border-radius: 4px;
+    border-radius: var(--b-radius);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
@@ -166,7 +167,7 @@ label{
 }
 input select{
     margin-left: 1em;
-    border-radius: 4px;
+    border-radius: var(--b-radius);
 }
 h5{
     height: 40px;
@@ -207,6 +208,9 @@ a{
     rgb(241, 233, 199),
     rgb(231, 221, 174));
 }
-#register{
-   
+:root{
+    --b-radius: 4px;
 }
+ img {
+    border-radius: var(--b-radius);
+ }
