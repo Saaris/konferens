@@ -73,7 +73,7 @@ h2{
     text-align: center;
     padding: 1em;
     margin: 1em;
-    border-radius: 4%;
+    border-radius: 1%;
    
 }
 h3{
@@ -98,6 +98,22 @@ h5{
 p
 {
     font-size: 20px;
+}
+.gothia-image{
+    width: 430px;
+    height: 370px;
+    border-radius: 1%;
+    box-shadow: var(--b-shadow);
+    padding: 1em;
+    margin: 0.5em;
+}
+.tower-img{
+    width: 430px;
+    height: 370px;
+    border-radius: 1%;
+    box-shadow: var(--b-shadow);
+    padding: 1em;
+    margin: 0.5em;
 }
 .seminar-info{
     box-shadow: var(--b-shadow);
@@ -148,13 +164,14 @@ form{
     align-items: center;
 }
 button{
-    max-width: 30%;
-    height: 100%;
+    width: 100px;
+    height: 40px;
     border-radius: var(--b-radius);
     border-color: rgb(96, 87, 87);
     margin: 0.5em;
     margin-top: 1em;
     transition: all;
+    font-size: large;
 }
 button:hover{
     background-color: beige;
@@ -182,6 +199,8 @@ button:hover{
     gap: 0.8em;
     box-shadow: var(--b-shadow);
     border-radius: 1%;
+    
+    justify-content: center;
     
 }
 .type-allergy{
