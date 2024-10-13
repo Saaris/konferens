@@ -20,6 +20,8 @@ main{
 .wrapper-konferens{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 nav{
     background-color: rgb(241, 233, 199);
@@ -69,6 +71,7 @@ h1{
 h2{
     font-size: 16px;
     color: rgb(21, 20, 20);
+    background-color: ;
    
 }
 h3{
@@ -168,6 +171,7 @@ label{
 input select{
     margin-left: 1em;
     border-radius: var(--b-radius);
+
 }
 h5{
     height: 40px;

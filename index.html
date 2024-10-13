@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bättre Webb</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,6 +22,9 @@
 <main>
     
     <div class="wrapper-konferens">
+        <h2>En tre dagars konferens med 10 olika seminarier riktade till
+            Frontend utvecklare. Konferensen äger rum datumen 18-20/10 på Gothia Towers i Göteborg. 
+            Det möjligt att anmäla sig till enbart en eller två dagar. För anmälan, vänligen fyll i formuläret nedan.</h2>
     <section class="seminars-wrapper">
         <img src="image/gothia-green.jpg" class="gothia-image" alt="Gothia Towers" width="1000" height="500">
         <section class="seminar-day">
@@ -89,51 +92,49 @@
             </article>
         </section>
     </section>
+    </div>
     
     <section class="konf-bild-text">
         <div class="image-container">
-            <h2>En tre dagars konferens med 10 olika seminarier riktade till
-                Frontend utvecklare. Konferensen äger rum datumen 18-20/10 på Gothia Towers i Göteborg. 
-                Det möjligt att anmäla sig till enbart en eller två dagar. För anmälan, vänligen fyll i formuläret nedan.</h2>
-    <img src="image/d8c78cb1-3ce3-4c8b-b63d-4c50fd5f97a7.jpg" alt="konferenssal" width="1000" height="500"> 
+            <img src="image/d8c78cb1-3ce3-4c8b-b63d-4c50fd5f97a7.jpg" alt="konferenssal" width="1000" height="500"> 
         </div>
 </section>
-<img src="image/image-asset1.jpeg" alt="towers">
+        <img src="image/image-asset1.jpeg" alt="towers">
         <form id="register">
-
-            <div class="flex-container"></div>
+            <div class="flex-container">
                 <h5>Fyll i formulär för anmälan</h5>
             <div class="flex-panel">
                 <label for="name">Namn:</label>
-                <input type="text" placeholder="namn.." id="name" required class="input-large" />
+                <input type="text" placeholder="namn.." id="name" required class="input-large">
             </div>
+        </div>
        
             <div class="flex-panel">
                 <label for="date">Datum från och till:</label>
-                <input type="date" class="input-medium" id="date" name="date" required />
-                <input type="date" class="input-medium" id="Datum" name="datum" required/>
+                <input type="date" class="input-medium" id="date" name="date" required>
+                <input type="date" class="input-medium" id="date2" name="date" required>
             </div>
             <div class="flex-panel">
                 <label for="age">Ålder:</label>
-                 <input type="number" class="input-small" min="18" max="120" id="age" name="age" placeholder="18" required/>
+                 <input type="number" class="input-small" min="18" max="120" id="age" name="age" placeholder="18" required>
             </div>
             <div class="flex-panel">
                 <label for="email">E-mail:</label>
-                <input type="email" class="input-large" id="e-mail" name="email" placeholder="e-mail.." required/>
+                <input type="email" class="input-large" id="email" name="email" placeholder="e-mail.." required>
             </div>
             <div class="flex-panel">
-                <label for="choose-food">Önskemål av mat:</label>
-            <select name="food" id="food">
-                <option value="Fisk">Fisk</option>
-                <option value="Kött">Kött</option>
-                <option value="Vegetariskt">Vegetariskt</option>
-            </select>
+                <label for="food">Önskemål av mat:</label>
+                <select name="food" id="food">
+                <option value="food">Fisk</option>
+                <option value="food">Kött</option>
+                <option value="food">Vegetariskt</option>
+                </select>
             </div>
             <div class="flex-panel">
             <label for="allergy">Om du har någon matallergi, vänligen meddela</label>
-            <input type="text" class="input-medium" placeholder="gluten.." name="allergy"/>
-                <button class="submit-btn">Skicka</button>
-                <button class="reset-btn">Rensa</button>
+            <input type="text" class="input-medium" id="allergy" placeholder="gluten.." name="allergy">
+                <button type="submit">Skicka</button>
+                <button type="reset">Rensa</button>
             </div>
         </form>
     
@@ -141,9 +142,9 @@
     <footer>
         <h3>För mer information kontakta oss på:</h3>
         <ul id="cont">
-            <li>Telefon: +46 123 456 789</li>
-            <li>Email: kontakt@minwebbplats.com</li>
-            <li>Adress: Storgatan 1, 12345 Stockholm, Sverige</li>
+            <li><b>Telefon:</b> +46 123 456 789</li>
+            <li><b>Email:</b> kontakt@minwebbplats.com</li>
+            <li><b>Adress:</b> Storgatan 1, 12345 Stockholm, Sverige</li>
         </ul>
         <p>&copy; 2024 Min Webbplats. Alla rättigheter förbehållna.</p>
     </footer>
