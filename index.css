@@ -220,11 +220,18 @@ h6{
 }  
 .konf-bild{
     filter: blur(1px);
+    border-radius: var(--b-radius);
+    width: 580px; 
+    height: 500px"
 }
 .konf-form{
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
+    border-radius: var(--b-radius);
+}
+.formular{
+    width: 800px;
 }
 .type-allergy{
     display: flex;
@@ -276,9 +283,10 @@ a{
 
 }
 input{
-    font-size: larger;
+    font-size: large;
     border-radius: 4%;
     box-shadow: var(--b-shadow);
+
 }
 .input-large{
     height: 50px;
