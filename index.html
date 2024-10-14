@@ -105,17 +105,17 @@
         <form id="register">
             <div class="flex-container">
                 <h5>Fyll i formulär för anmälan</h5>
-            <div class="flex-panel">
-                <label for="name">Namn:</label>
-                <input type="text" placeholder="namn.." id="name" required class="input-large">
             </div>
-        </div>
+            <div class="flex-panel">
+                <label for="name">För och efteramn:</label>
+                <input type="text" placeholder="namn.." id="name" required class="input-large" maxlength="50">
+            </div>
        
             <div class="flex-panel">
                 <label for="date">Datum från och med:</label>
-                <input type="date" class="input-large" id="date" name="date" required>
+                <input type="date" class="input-large" id="date" name="date" min="2024-01-01" required>
                 <label for="date">Datum till och med:</label>
-                <input type="date" class="input-large" id="date2" name="date" required>
+                <input type="date" class="input-large" id="date2" name="date" max="2024-12-31" required>
             </div>
             <div class="flex-panel">
                 <label for="age">Ålder:</label>
@@ -123,19 +123,21 @@
             </div>
             <div class="flex-panel">
                 <label for="email">E-mail:</label>
-                <input type="email" class="input-large" id="email" name="email" placeholder="e-mail.." required>
+                <input type="email" class="input-large" id="email" name="email" placeholder="e-mail.." autocomplete="on" required >
             </div>
             <div class="flex-panel">
                 <label for="food">Önskemål av mat:</label>
-                <select name="food" id="food">
-                <option value="food">Fisk</option>
-                <option value="food">Kött</option>
-                <option value="food">Vegetariskt</option>
-                </select>
-            </div>
-            <div class="flex-panel">
+                <input type="radio" name="food" id="fish">Fisk>
+                <input type="radio" name="food" id="meat">Kött>
+                <input type="radio" name="food" id="veg">Vegetariskt>
+             </div>
+            
+             <div class="flex-panel">
             <label for="allergy">Om du har någon matallergi, vänligen meddela</label>
-            <input type="text" class="input-large" id="allergy" placeholder="gluten.." name="allergy">
+            <input type="text" class="input-large" id="allergy" placeholder="gluten.." name="allergy" maxlength="30">
+             </div>
+
+            <div class="flex-panel">
                 <button type="submit">Skicka</button>
                 <button type="reset">Rensa</button>
             </div>

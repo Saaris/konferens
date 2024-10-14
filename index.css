@@ -29,6 +29,8 @@ main{
     justify-content: center;
     box-shadow: var(--b-shadow);
     border-radius: 1%;
+    margin: 1em;
+    padding: 1em;
 
 }
 nav{
@@ -47,7 +49,7 @@ ul{
     box-shadow: var(--b-shadow);
     background-color: rgb(241, 233, 199);
     font-size: large;
-   
+
 
 }
 .image-container img{
@@ -100,7 +102,7 @@ p
     font-size: 20px;
 }
 .gothia-image{
-    width: 430px;
+    width: 415px;
     height: 370px;
     border-radius: 1%;
     box-shadow: var(--b-shadow);
@@ -108,7 +110,7 @@ p
     margin: 0.5em;
 }
 .tower-img{
-    width: 430px;
+    width: 415px;
     height: 370px;
     border-radius: 1%;
     box-shadow: var(--b-shadow);
@@ -142,9 +144,6 @@ form{
     
 }
 .flex-panel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0.5em;
     padding: 0.5em;
 }
@@ -185,7 +184,6 @@ button:hover{
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 0.3em;
-    border-radius: var(--b-radius);
     box-shadow: var(--b-shadow);
     border-radius: 1%;
 
@@ -215,11 +213,6 @@ label{
     font-size: 20px;
     color: rgb(21, 20, 20);
     font-weight:bold;
-    
-}
-input select{
-    margin-left: 1em;
-    border-radius: var(--b-radius);
 
 }
 footer{
@@ -274,13 +267,24 @@ input{
 }
 .input-large{
     height: 50px;
+    width: 75px;
     
 }
 .input-medium{
     height: 50px;
 }
-#food{
-    width: 250px;
+#fish, #meat, #veg{
+    width: 50px;
     height: 50px;
-    border-radius: 4%;
+    margin: 0.5em;
+    
 }
+input:invalid {
+    border: 2px solid red;
+    
+}
+
+input:valid {
+    border: 2px solid green;
+}
+    
