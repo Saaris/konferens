@@ -25,12 +25,11 @@ main{
 .wrapper-konferens{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     box-shadow: var(--b-shadow);
     border-radius: 1%;
     margin: 1em;
     padding: 1em;
+
 
 }
 nav{
@@ -50,11 +49,22 @@ ul{
     background-color: rgb(241, 233, 199);
     font-size: large;
 
+}
+.omoss-bild{
+    display: flex;
+    margin: 1em;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--b-shadow);
+    border-radius: 1%;
 
 }
 .image-container img{
-    filter: blur(1px);
     border-radius: var(--b-radius);
+    padding: 1em;
+    width: 700px;
+    height: auto;
 
 }
 .info{
@@ -68,13 +78,11 @@ h1{
     text-align: center;
 }
 h2{
-    font-size: 28px;
+    font-size: 20px;
     color: rgb(21, 20, 20);
-    background-color: rgb(241, 233, 199);
     box-shadow: var(--b-shadow);
-    text-align: center;
-    padding: 1em;
-    margin: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
     border-radius: 1%;
    
 }
@@ -97,13 +105,12 @@ h5{
     font-size: larger;
     background-color: rgb(241, 233, 199);
 }
-p
-{
+p{
     font-size: 20px;
 }
 .gothia-image{
     width: 415px;
-    height: 370px;
+    height: auto;
     border-radius: 1%;
     box-shadow: var(--b-shadow);
     padding: 1em;
@@ -111,7 +118,7 @@ p
 }
 .tower-img{
     width: 415px;
-    height: 370px;
+    height: auto;
     border-radius: 1%;
     box-shadow: var(--b-shadow);
     padding: 1em;
@@ -191,19 +198,30 @@ button:hover{
 .seminars-wrapper{
     display: grid;
     grid-template-columns: 45% 45%;
-    margin: 1em;
-    padding: 1em;
+    margin: 0.5em;
+    padding: 0;
     background: var(--bg-color);
     gap: 0.8em;
     box-shadow: var(--b-shadow);
     border-radius: 1%;
-    
+    width: 100%;
     justify-content: center;
-    
+
 }
+.konf-sal{
+    display: flex;
+    flex-direction: row;   
+}
+h6{
+    font-size: 20px;
+}  
+.konf-bild{
+    filter: blur(1px);
+}
+
 .type-allergy{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 2em;
 }
 label{
@@ -235,16 +253,6 @@ a{
     margin: 0.5em;
     padding: 0.5em;
     font-size: 20px;
-
-}
-.konf-bild-text{
-    display: flex;
-    flex-direction: row;
-    margin: 1em;
-    padding: 1em;
-    align-items: center;
-    box-shadow: var(--b-shadow);
-    border-radius: 1%;
 }
 :root{
     --bg-color: linear-gradient( to bottom left,
@@ -267,7 +275,6 @@ input{
 }
 .input-large{
     height: 50px;
-    width: 75px;
     
 }
 .input-medium{
