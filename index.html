@@ -23,11 +23,12 @@
 <main>
   <section class="wrapper-konferens">
     <section class="seminars-wrapper">
-       <section class="seminar-day">
+       
+        <section class="seminar-day">
         <img src="images/gothia-green.jpg" class="gothia-image" alt="Gothia Towers" width="415" height="370">
         <img src="images/image-asset1.jpeg" class="tower-img" alt="Gothia Towers" width="500" height="500"> 
        </section>
-       
+
         <section class="seminar-day">
             <h3>Seminarier 18/10</h3>
             <article class="seminar-info" id="seminar-info">
@@ -93,29 +94,35 @@
             </article>
         </section>
     </section>
-    </div>
     
-    <section class="omoss-bild">
-        <ul id="oss">
-        <h2>En tre dagars konferens med 10 olika seminarier riktade till Frontend utvecklare.
+    
+    <section class="omoss-bild" id=>
+        <p>En tre dagars konferens med 10 olika seminarier riktade till Frontend utvecklare.
             <br>Konferensen äger rum datumen 18-20/10 på Svenska mässan i Göteborg.
             Våra förälsare är tre Frontend-utvecklare med lång erfarenhet inom området.
-            <br>För anmälan hela eventet eller för dagspass, vänligen fyll i formuläret nedan.</h2>
-        </ul>
+            <br>För anmälan hela eventet eller för dagspass, vänligen fyll i formuläret nedan.</p>
         <div class="image-container">
             <img src="images/föreläsare2.jpg" alt="presenters" width="700" height="500"> 
         </div>
     </section>
-    <div class="konf-form">
-    <h6>Kongresshallen tar upp emot upp till 1200 besökare</h6>
-    <section class="konf-sal">
-    <img src="images/kongresshallen.jpg" alt="konferenssal" width="700" height="500" class="konf-bild">
 
+    <div class="konf-form">
+    <section class="konf-sal">
+        <h3>Kongresshallen tar upp emot upp till 1200 besökare</h3>
+       
+        <div class="sal-fika">
+    <img src="images/kongresshallen.jpg" alt="konferenssal" width="700" height="500" class="konf-bild">
+    <img src="images/bild-fika.jpg" alt="bild-fika" width="700" height="500" class="konf-bild">
+        </div>
+    </section>
+        
+    <div class="formular">
     <!-- formuläret -->
-        <form id="register">
-            <div class="flex-container">
+    <form id="register">
+         <div class="flex-container">
                 <h5>Fyll i formulär för anmälan</h5>
             </div>
+            
             <div class="flex-panel">
                 <label for="name">För och efteramn:</label>
                 <input type="text" placeholder="namn.." id="name" required class="input-large" maxlength="50">
@@ -127,35 +134,37 @@
                 <label for="date">Datum till och med:</label>
                 <input type="date" class="input-large" id="date2" name="date" max="2024-12-31" required>
             </div>
+            
             <div class="flex-panel">
                 <label for="age">Ålder:</label>
                  <input type="number" class="input-medium" min="18" max="120" id="age" name="age" placeholder="18" required>
             </div>
+            
             <div class="flex-panel">
                 <label for="email">E-mail:</label>
                 <input type="email" class="input-large" id="email" name="email" placeholder="e-mail.." autocomplete="on" required >
             </div>
+            
             <div class="flex-panel">
                 <label for="food">Önskemål av mat:</label>
                 <input type="radio" name="food" id="fish">Fisk>
                 <input type="radio" name="food" id="meat">Kött>
                 <input type="radio" name="food" id="veg">Vegetariskt>
-             </div>
+            </div>
             
-             <div class="flex-panel">
-            <label for="allergy">Om du har någon matallergi, vänligen meddela</label>
-            <input type="text" class="input-large" id="allergy" placeholder="gluten.." name="allergy" maxlength="30">
-             </div>
+            <div class="flex-panel">
+                <label for="allergy">Om du har någon matallergi, vänligen meddela</label>
+                 <input type="text" class="input-large" id="allergy" placeholder="gluten.." name="allergy" maxlength="30">
+            </div>
 
             <div class="flex-panel">
                 <button type="submit">Skicka</button>
                 <button type="reset">Rensa</button>
             </div>
-        </form>
+        </div>
+    </form>
     </div>
-    </section>
-  </section>
-</main>
+  </main>
     <footer>
         <h3>För mer information kontakta oss på:</h3>
         <ul id="cont">
