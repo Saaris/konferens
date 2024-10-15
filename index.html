@@ -13,10 +13,9 @@
         <nav>
             <h1>Bättre Webb</h1>
             <ul>
-                <li><a href="#sem-info">Info</a></li>
+                <li><a href="#sem-info">Seminarier</a></li>
                 <li><a href="#register">Anmälan</a></li>
                 <li><a href="#cont">Kontakt</a></li>
-                <li><a href="#oss">Om oss</a></li>
             </ul>
         </nav>
     </header>
@@ -25,23 +24,26 @@
     <section class="seminars-wrapper">
        
         <section class="seminar-day">
-        <img src="images/gothia-green.jpg" class="gothia-image" alt="Gothia Towers" width="415" height="370">
-        <img src="images/image-asset1.jpeg" class="tower-img" alt="Gothia Towers" width="500" height="500"> 
+        <img src="images/gothia-green.jpg" class="gothia-image" alt="Gothia Towers">
+        <img src="images/image-asset1.jpeg" class="tower-img" alt="Gothia Towers"> 
        </section>
 
         <section class="seminar-day">
             <h3>Seminarier 18/10</h3>
             <article class="seminar-info" id="seminar-info">
+                <h5>08.30-10.00</h5>
                 <h4>Modern JavaScript Frameworks-React, Vue och Svelte</h4>
-                <p>En jämförelse av de mest populära frontend-ramverken: React, Vue och Svelte.</p>
+                <p>En jämförelse av de mest populära frontend-ramverken: React, Vue och Angular.</p>
             </article>
 
             <article class="seminar-info">
+                <h5>10.30-12.00</h5>
                 <h4>Bemästra responsiv webbdesign</h4>
                 <p>Lär dig mer om designprinciper för mobila enheter.</p>
             </article>
 
             <article class="seminar-info">
+                <h5>13.00-14.30</h5>
                 <h4>Introduktion till TypeScript för frontend-utvecklare</h4>
                 <p>Lär dig grunderna i TypeScript och hur det
                     <br>integreras med JavaScript-ramverk som React och Vue..</p>
@@ -51,6 +53,7 @@
         <section class="seminar-day">
             <h3>Seminarier 19/10</h3>
             <article class="seminar-info">
+                <h5>08.30-10.00</h5>
                 <h4>Optimering av webbprestanda-Tekniker och verktyg</h4>
                 <p>Strategier för att förbättra sidladdningstider,
                 <br>t.ex. koddelning, lat inläsning och
@@ -58,12 +61,14 @@
             </article>
 
             <article class="seminar-info">
+                <h5>10.30-12.00</h5>
                 <h4>Bygga tillgängliga webbplatser-bästa teknikerna</h4>
                 <p>Introduktion till WCAG-riktlinjerna
                 <br>och varför tillgänglighet är viktigt.</p>
             </article>
 
             <article class="seminar-info">
+                <h5>13.00-14.30</h5>
                     <h4>Komponentdriven utveckling med Storybook</h4>
                     <p>Lär dig hur du bygger, testar och dokumenterar
                     <br>frontend-komponenter isolerat med Storybook.</p>
@@ -71,24 +76,28 @@
         </section>
 
         <section class="seminar-day">
-            <h3>Seminarier 20/10:</h3>
+            <h3>Seminarier 20/10</h3>
             <article class="seminar-info">
+                    <h5>08.30-10.00</h5>
                     <h4>Rendering på serversidan med Next.js</h4>
                     <p>Lär dig hur SSR kan förbättra SEO och initial laddningsprestanda.</p>
             </article>
             
             <article class="seminar-info">
+                <h5>10.30-12.00</h5>
                     <h4>CSS-i Javascript</h4>
                     <p>Översikt över CSS-in-JS-bibliotek</p>
             </article>
 
             <article class="seminar-info">
+                <h5>13.00-14.30</h5>
                     <h4>Introduktion till WebAssembly för frontend-utvecklare</h4>
                     <p>Upptäck hur WebAssembly kan användas för
                     <br>att förbättra prestanda i frontend-applikationer.</p>
             </article> 
             
             <article class="seminar-info">
+                <h5>14.30-16.00</h5>
                     <h4>Testa frontend-applikationer med Jest och Cypress</h4>
                     <p>Introduktion till automatiserad testning för frontend-applikationer.</p>
             </article>
@@ -98,11 +107,12 @@
     
     <section class="omoss-bild" id=>
         <p>En tre dagars konferens med 10 olika seminarier riktade till Frontend utvecklare.
-            <br>Konferensen äger rum datumen 18-20/10 på Svenska mässan i Göteborg.
-            Våra förälsare är tre Frontend-utvecklare med lång erfarenhet inom området.
-            <br>För anmälan hela eventet eller för dagspass, vänligen fyll i formuläret nedan.</p>
+            <br>Konferensen äger rum datumen 18-20/10 på Svenska mässan i Göteborg. Varje dag är mellan 08.30-16.00. Lunch 12.00-13.00.
+            Våra tre föreläsare heter Johan, Kim och Ann. Johan är Frontend-utvecklare med lång erfarenhet inom området.<br>Kim och Anna har en bakgrund som Fullstackutvecklare, även de lång erfarenhet med frontendutveckling.
+            Mellan de olika seminarierna kommeer det att vara paus där det också bjuds det på fika och ges möjlighet att träffa andra Frontend-utvecklare, utöver lunch som ingår vid anmälan.
+            <br>För anmälan till hela eventet eller för enstaka dagspass, vänligen fyll i formuläret nedan.</p>
         <div class="image-container">
-            <img src="images/föreläsare2.jpg" alt="presenters" width="700" height="500"> 
+            <img src="images/föreläsare2.jpg" alt="presenters"> 
         </div>
     </section>
 
@@ -129,10 +139,18 @@
             </div>
        
             <div class="flex-panel">
-                <label for="date">Datum från och med:</label>
-                <input type="date" class="input-large" id="date" name="date" min="2024-01-01" required>
-                <label for="date">Datum till och med:</label>
-                <input type="date" class="input-large" id="date2" name="date" max="2024-12-31" required>
+                <h4>Vilka dagar:</h4>
+                <section class="days">
+                    <div class="dag-column">
+                     <input type="checkbox" class="input-small" required>2024-10-18
+                    </div>
+                     <div class="dag-column">
+                    <input type="checkbox" class="input-small" required>2024-10-19
+                    </div>
+                    <div class="dag-column">
+                    <input type="checkbox" class="input-small" required>2024-10-20
+                    </div>
+                </section>
             </div>
             
             <div class="flex-panel">
@@ -146,10 +164,14 @@
             </div>
             
             <div class="flex-panel">
-                <label for="food">Önskemål av mat:</label>
-                <input type="radio" name="food" id="fish">Fisk>
-                <input type="radio" name="food" id="meat">Kött>
-                <input type="radio" name="food" id="veg">Vegetariskt>
+                <h4>Önskemål av mat:</h4>
+                <div class="mat">
+                <label for="food">Fisk</label>
+                <input type="radio" name="food" id="fish">
+                <label for="food">Kött</label>
+                <input type="radio" name="food" id="meat">
+                <label for="food">Vegetariskt</label>
+                <input type="radio" name="food" id="veg">
             </div>
             
             <div class="flex-panel">
@@ -166,7 +188,7 @@
     </div>
   </main>
     <footer>
-        <h3>För mer information kontakta oss på:</h3>
+        <h6>För mer information kontakta oss på:</h6>
         <ul id="cont">
             <li><b>Telefon:</b> +46 123 456 789</li>
             <li><b>Email:</b> kontakt@minwebbplats.com</li>

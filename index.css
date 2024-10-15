@@ -1,10 +1,11 @@
 section, div, ul {
     border: 1px solid hotpink;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
 }
 header{
     width: 100%;
@@ -14,8 +15,6 @@ body{
     font-family: 'Quicksand', sans-serif;
     background: var(--bg-color);
     width: 100%;
-    
-    
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -26,7 +25,6 @@ main{
 .wrapper-konferens{
     display: flex;
     flex-wrap: wrap;
-    box-shadow: var(--b-shadow);
     border-radius: 1%;
     margin: 1em;
     padding: 1em;
@@ -45,7 +43,6 @@ ul{
     display: flex;
     list-style: none; 
     box-shadow: var(--b-shadow);
-    background-color: rgb(241, 233, 199);
     font-size: large;
 
 }
@@ -62,7 +59,7 @@ ul{
 .image-container img{
     border-radius: var(--b-radius);
     padding: 1em;
-    width: 700px;
+    width: 100%;
     height: auto;
 
 }
@@ -89,26 +86,31 @@ h3{
     color: rgb(21, 20, 20);
     font-size: 26px;
     font-weight: bold;
+    padding: 0.2em;
 }
 h4{
     margin: 0;
-    color: rgb(242, 146, 12);
+    color: rgb(21, 20, 20);
     font-size: 20px;
+    background-color: rgb(235, 231, 210);
 }
 
 h5{
     height: 40px;
     color: rgb(21, 20, 20);
     padding: 0;
-    text-align: center;
-    font-size: larger;
-    background-color: rgb(241, 233, 199);
+    font-size: large;
+
+}
+h6{
+    padding: 1em;
 }
 p{
     font-size: 20px;
+    background-color: rgb(248, 244, 224);
 }
 .gothia-image{
-    width: 415px;
+    width: 100%;
     height: auto;
     border-radius: 1%;
     box-shadow: var(--b-shadow);
@@ -116,7 +118,7 @@ p{
     margin: 0.5em;
 }
 .tower-img{
-    width: 415px;
+    width: 100%;
     height: auto;
     border-radius: 1%;
     box-shadow: var(--b-shadow);
@@ -149,6 +151,9 @@ form{
 .flex-panel{
     margin: 0.5em;
     padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .flex-container{
     display: flex;
@@ -165,6 +170,26 @@ form{
     flex-direction: column;
     align-items: center;
 }
+.mat{
+    display: flex;
+    flex-direction: row;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    padding: 0.3em;
+    margin: 0.3em;
+    gap: 0.5em;
+
+.dag-column{
+    display: flex;
+    flex-direction: row;
+    padding: 0.2em;
+    padding-left: 0.2em;
+    gap: 0.2em;
+}
+}
+
 button{
     width: 100px;
     height: 40px;
@@ -178,6 +203,7 @@ button{
 button:hover{
     background-color: beige;
     cursor: pointer;
+
 }
 .seminar-day{
     
@@ -186,7 +212,7 @@ button:hover{
     color: rgb(21, 20, 20);
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 0.3em;
+    row-gap: 0.5em;
     box-shadow: var(--b-shadow);
     border-radius: 1%;
 
@@ -197,10 +223,8 @@ button:hover{
     margin: 0.5em;
     padding: 0;
     background: var(--bg-color);
-    gap: 0.8em;
-    box-shadow: var(--b-shadow);
+    gap: em;
     border-radius: 1%;
-    width: 100%;
     justify-content: center;
 
 }
@@ -249,11 +273,12 @@ label{
 }
 footer{
     width: 100%;
-    max-height: 300px;
+    height: 200px;
     background: var(--bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: absolute;
     margin-top: 1em;
     box-shadow: var(--b-shadow);
@@ -261,18 +286,28 @@ footer{
 li{
     margin: 0.5em;
 }
+li:hover{
+    background-color: rgb(237, 237, 221);
+
+}
+a:hover{
+    background-color: rgb(237, 237, 221);
+    cursor: pointer;
+}
+
 a{
     color:rgb(21, 20, 20);
-    background-color: rgb(241, 233, 199);
+    background-color: rgb(249, 245, 227);
     margin: 0.5em;
     padding: 0.5em;
     font-size: 20px;
+    border-radius: var(--b-radius);
 }
 :root{
     --bg-color: linear-gradient( to bottom left,
-    rgb(247, 242, 222),
-    rgb(241, 233, 199),
-    rgb(221, 218, 202));
+    rgb(250, 248, 241),
+    rgb(248, 243, 219),
+    rgb(235, 231, 210));
 
 }
 :root{
@@ -289,18 +324,27 @@ input{
 
 }
 .input-large{
-    height: 50px;
+    height: 2.5em;
+    width: 14em;
+    font-size: large;
+    
     
 }
 .input-medium{
-    height: 50px;
+    height: 2.5em;
+}
+.input-small{
+    height: 1.8em;
+    width: 1.8em;
+ 
+
 }
 #fish, #meat, #veg{
-    width: 50px;
-    height: 50px;
+    width: 2em;
+    height: 2em;
     margin: 0.5em;
-    
-}
+}   
+   
 input:invalid {
     border: 2px solid red;
     
@@ -309,4 +353,3 @@ input:invalid {
 input:valid {
     border: 2px solid green;
 }
-    
