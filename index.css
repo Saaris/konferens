@@ -1,5 +1,5 @@
 section, div, ul {
-    border: 1px solid hotpink;
+   border: 1px solid hotpink;
 }
 
 *{
@@ -11,8 +11,21 @@ header{
     box-shadow: var(--b-shadow);
     width: 100%;
     border: 2px solid greenyellow;
-    
 }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;    
+}
+
+ul{
+    display: flex;
+    list-style: none; 
+    box-shadow: var(--b-shadow);
+    font-size: large;
+}
+
 body{
     font-family: 'Quicksand', sans-serif;
     background: var(--bg-color);
@@ -23,6 +36,7 @@ body{
 }
 main{
     padding: 1em;
+    
 }
 .wrapper-konferens{
     display: flex;
@@ -31,47 +45,30 @@ main{
     margin: 1em;
     padding: 1em;
     width: 100%;
-
-
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 3em;
-    
-    
-}
-ul{
-    display: flex;
-    list-style: none; 
-    box-shadow: var(--b-shadow);
-    font-size: large;
 
-}
-.omoss-bild{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1em;
-    padding: 1em;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--b-shadow);
+.seminars-wrapper{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin: 0.5em;
+    padding: 0;
+    background: var(--bg-color);
+    gap: 0.3em;
     border-radius: 1%;
-
+    justify-content: center;
+    height: auto;
 }
-.image-container img{
-    border-radius: var(--b-radius);
-    padding: 1em;
+.seminar-day{
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-.info{
-    display: flex;
-    flex-direction: row;
+    padding: 1em;
+    color: rgb(21, 20, 20);
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.5em;
+    box-shadow: var(--b-shadow);
+    border-radius: 1%;
+    
 
 }
 h1{
@@ -137,6 +134,32 @@ p{
     box-shadow: var(--b-shadow);
     margin: 0.5em;
     padding: 0.5em;
+    height: 100%;
+
+}
+.mer-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--b-shadow);
+    border-radius: 1%;
+
+}
+.image-container img{
+    border-radius: var(--b-radius);
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.info{
+    display: flex;
+    flex-direction: row;
 }
 section{
     margin:0.2em;
@@ -157,6 +180,8 @@ form{
     
 }
 .flex-panel{
+    width: 100%;
+    height: auto;
     margin: 0.5em;
     padding: 0.5em;
     display: flex;
@@ -182,6 +207,7 @@ form{
 .mat{
     display: flex;
     flex-direction: row;
+    
 }
 .days{
     display: flex;
@@ -189,6 +215,7 @@ form{
     padding: 0.3em;
     margin: 0.3em;
     gap: 0.5em;
+    
 
 .dag-column{
     display: flex;
@@ -220,29 +247,7 @@ button:hover{
     cursor: pointer;
 
 }
-.seminar-day{
-    
-    max-width: 100%;
-    padding: 1em;
-    color: rgb(21, 20, 20);
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 0.5em;
-    box-shadow: var(--b-shadow);
-    border-radius: 1%;
 
-}
-.seminars-wrapper{
-    display: grid;
-    grid-template-columns: 45% 45%;
-    margin: 0.5em;
-    padding: 0;
-    background: var(--bg-color);
-    gap: 0.3em;
-    border-radius: 1%;
-    justify-content: center;
-
-}
 .konf-sal{
     display: flex;
     flex-wrap: wrap;
@@ -261,8 +266,8 @@ h6{
 .konf-bild{
     filter: blur(1px);
     border-radius: var(--b-radius);
-    width: 580px; 
-    height: 500px;
+    width: 100%; 
+    height: auto;
     
 }
 .konf-form{
@@ -339,7 +344,7 @@ input{
 }
 .input-large{
     height: 2.5em;
-    width: 16em;
+    width: 30%;
     font-size: large;
     
     
@@ -368,12 +373,13 @@ input:valid {
     border: 2px solid green;
 }
 #register{
-    width: auto;
+    width: 100%;
     height: auto;
 }
 .formular{
-    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
+    border-radius: var(--b-radius);
+    box-shadow: var(--b-shadow);
 }
