@@ -20,17 +20,14 @@
         </nav>
     </header>
 <main>
-  <section class="wrapper-konferens">
-    <section class="seminars-wrapper">
-       
-        <section class="seminar-day">
+    <section class="seminar-pic">
         <img src="images/gothia-green.jpg" class="gothia-image" alt="Gothia Towers">
-        <img src="images/image-asset1.jpeg" class="tower-img" alt="Gothia Towers"> 
-       </section>
+        <img src="images/image-asset1.jpeg" class="tower-img" alt="Gothia Towers">
+    </section> 
 
-        <section class="seminar-day">
-            <h2>Seminarier 18/10</h2>
-            <article class="seminar-info" id="seminar-info">
+        <h2>Seminarier 18/10</h2>
+    <section class="seminar-day">
+            <article class="seminar-info">
                 <h5>08.30-10.00</h5>
                 <h4>Modern JavaScript Frameworks-React, Vue och Svelte</h4>
                 <p>En jämförelse av de mest populära frontend-ramverken: React, Vue och Angular.</p>
@@ -48,17 +45,18 @@
                 <p>Lär dig grunderna i TypeScript och hur det
                     <br>integreras med JavaScript-ramverk som React och Vue..</p>
             </article>
-
+                    
             <article class="seminar-info">
+                <h5>14.30-16.00</h5>
             <h4>State Management i moderna frontend-applikationer</h4>
                 <p>Utforska de olika alternativen för att hantera tillstånd i frontend-applikationer,<br>
                 och lär dig hur man hanterar globalt tillstånd på ett effektivt sätt
                 <br> och undviker vanliga problem som "prop drilling".</p>
-            </article>
-        </section>
+            </article>  
+    </section>
 
-        <section class="seminar-day">
-            <h2>Seminarier 19/10</h2>
+        <h2>Seminarier 19/10</h2>
+    <section class="seminar-day">
             <article class="seminar-info">
                 <h5>08.30-10.00</h5>
                 <h4>Optimering av webbprestanda-Tekniker och verktyg</h4>
@@ -87,10 +85,9 @@
                  <p>Lär dig grunderna i hur du bygger "Progressive Web Apps" (PWA)
                  <br>som kan fungera offline, har snabb laddningstid och ger en app-liknande upplevelse för användare.</p>
             </article>
-        </section>
+    </section>
 
-        <section class="seminar-day">
-            <h2>Seminarier 20/10</h2>
+    <section class="seminar-day">
             <article class="seminar-info">
                     <h5>08.30-10.00</h5>
                     <h4>Rendering på serversidan med Next.js</h4>
@@ -115,11 +112,9 @@
                     <h4>Testa frontend-applikationer med Jest och Cypress</h4>
                     <p>Introduktion till automatiserad testning för frontend-applikationer.</p>
             </article>
-        </section>
     </section>
     
-    
-    <section class="mer-info" id=>
+    <section class="mer-info">
         <p>En tre dagars konferens med 10 olika seminarier riktade till Frontend utvecklare.
             Konferensen äger rum datumen 18-20/10 på Svenska mässan i Göteborg.
             Varje dag är mellan 08.30-16.00. Lunch serveras 12.00-13.00 och ingår vid anmälan.
@@ -128,21 +123,21 @@
             Mellan de olika seminarierna kommer det att vara en 15 minuters paus
             där det också bjuds på fika och ges möjlighet att träffa andra Frontend-utvecklare.
             För anmälan till hela eventet eller för enstaka dagspass, vänligen fyll i formuläret nedan.</p>
-        <div class="image-container">
+            <div class="mer-infobild"></div>
             <img src="images/föreläsare3.jpg" alt="presenters"> 
-        </div>
+            </div>
     </section>
 
-    <div class="konf-form">
     <section class="konf-sal">
-        <h3>Kongresshallen tar upp emot upp till 1200 besökare</h3>
-       
+        <h3>Kongresshallen tar emot upp mellan 300 till 1500 besökare. 
+            Kongresshallen består av en hall och en foajé med en egen entré, i foajén erbjuds fördrink och mingel. 
+            Entrén till foajén vetter mot Scandinavium och har en rulltrappa upp till foajén på plan 1. 
+            På plan 1 finns också ingång till foajén för personer med hjälpmedel. Se karta vid entré.</h3>
         <div class="image-container">
-    <img src="images/kongresshallen.jpg" alt="konferenssal" class="konf-bild">
-    <img src="images/bild-fika.jpg" alt="bild-fika" class="konf-bild">
-        
-    </section>
+            <img src="images/kongresshallen.jpg" alt="konferenssal" class="konf-bild">
+            <img src="images/bild-fika.jpg" alt="bild-fika" class="konf-bild">
         </div>  
+    </section> 
        
     <!-- formuläret -->
     <form id="register">
@@ -183,25 +178,26 @@
             <div class="flex-panel">
                 <h5>Önskemål av mat:</h5>
             <div class="mat">
-                <label for="food">Fisk</label>
+                <label for="fish">Fisk</label>
                 <input type="radio" name="food" id="fish">
-                <label for="food">Kött</label>
+                <label for="meat">Kött</label>
                 <input type="radio" name="food" id="meat">
-                <label for="food">Vegetariskt</label>
+                <label for="veg">Vegetariskt</label>
                 <input type="radio" name="food" id="veg">
             </div>
-            
+            </div>
+
             <div class="flex-panel">
                 <label for="allergy">Om du har någon matallergi, vänligen meddela</label>
-                 <input type="text" class="input-large" id="allergy" placeholder="gluten.." name="allergy" maxlength="30">
+                <input type="text" class="input-large" id="allergy" placeholder="gluten.." name="allergy" maxlength="30">
             </div>
 
             <div class="button-panel">
                 <button type="submit">Skicka</button>
                 <button type="reset">Rensa</button>
             </div>
-    </form>
-    </div>
+    
+        </form>
   </main>
     <footer>
         <h6>För mer information kontakta oss på:</h6>
