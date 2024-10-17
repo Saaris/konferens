@@ -76,11 +76,10 @@ h2{
 }
 
 h3{
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(21, 20, 20);
-    padding: 1em;
-    margin: 1em;
-    border-radius: 1%;
+    padding-left: 1em;
+    padding-top: 1em;
 }
 h4{
     color: rgb(21, 20, 20);
@@ -235,6 +234,7 @@ button:hover{
 .konf-bild{
     filter: blur(1px);
     height: auto;
+    width: 50%;
 }
 
 .konf-form{
