@@ -1,6 +1,4 @@
-section, div, ul {
-    border: 1px solid hotpink;
-}
+
 
  *{
     box-sizing: border-box;
@@ -40,9 +38,9 @@ body{
     padding: 1em;
     height: auto;
 
- }
+}
  
- .seminar-pic{
+.seminar-pic{
     display: flex;
     flex-direction: row;
     height: auto;
@@ -57,7 +55,8 @@ body{
     color: rgb(21, 20, 20);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 0.5em;
+    row-gap: 1.5em;
+    column-gap: 0.5em;
     border-radius: var(--b-radius);
 }
 
@@ -78,18 +77,20 @@ h2{
 h3{
     font-size: 20px;
     color: rgb(21, 20, 20);
-    padding-left: 1em;
+    padding-left: 1.5em;
     padding-top: 1em;
 }
 h4{
     color: rgb(21, 20, 20);
     font-size: 24px;
+    padding-left: 1em;
 } 
 
 h5{
     height: 40px;
     color: rgb(21, 20, 20);
     font-size: 20px;
+    padding-left: 1.2em;
 }
 
 h6{
@@ -135,6 +136,7 @@ p{
     box-shadow: var(--b-shadow);
     border-radius: var(--b-radius);
     width: 100%;
+    padding:1em;
 }
 
 .image-container{
@@ -406,4 +408,17 @@ input:valid {
     .input-large {
         width: 100%; 
     }
+}
+#sociala{
+    display: flex;
+    align-items: flex-end;  
+
+}
+.icons{
+    width: 1em;
+    padding: 0.3em;
+    
+}i:hover{
+    background-color: rgb(237, 237, 221);
+    cursor: pointer;
 }
