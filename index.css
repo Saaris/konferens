@@ -5,7 +5,6 @@ section, div, ul {
  *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 header{
@@ -31,7 +30,7 @@ ul{
     font-size: large;
 }
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     background: var(--bg-color);
     width: 100%;
     line-height: 1.6;
@@ -40,18 +39,17 @@ body{
  main{
     padding: 1em;
     height: auto;
+
  }
  
- .seminars-wrapper{
-    display: grid; 
-    grid-template-columns: 45% 45%;
-    margin: 0.5em;
-    padding: 0;
-    background: var(--bg-color);
-    gap: 0.3em;
-    border-radius: 1%;
-    justify-content: center;
+ .seminar-pic{
+    display: flex;
+    flex-direction: row;
     height: auto;
+    justify-content: center;
+    padding: 0.5em;
+    gap: 0.5em;
+ 
 }
 .seminar-day{
     width: 100%;
@@ -60,6 +58,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 0.5em;
+    border-radius: var(--b-radius);
 }
 
 h1{
@@ -69,7 +68,7 @@ h1{
 }
 h2{
     color: rgb(21, 20, 20);
-    font-size: 26px;
+    font-size: 24px; 
     padding: 0.2em;
     text-align: center;
     padding-top: 1em;
@@ -86,8 +85,6 @@ h3{
 h4{
     color: rgb(21, 20, 20);
     font-size: 24px;
-    display: flex;
-    flex-wrap: wrap;
 } 
 
 h5{
@@ -109,7 +106,7 @@ p{
 } 
 
 .gothia-image{
-    width: 96%;
+    width: 48%;
     height: auto;
     border-radius: 1%;
     box-shadow: var(--b-shadow);
@@ -117,22 +114,12 @@ p{
 }
 
 .tower-img{
-    width: 94%;
+    width: 48%;
     height: auto;
     border-radius: 1%;
     box-shadow: var(--b-shadow);
     margin: 0.5em;
     border: 1px solid rgb(248, 244, 224);
-}
-
-.seminar-pic{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 0.5em;
-    box-shadow: var(--b-shadow);
-    align-items: center;
 }
 
 .seminar-info{
@@ -147,7 +134,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     box-shadow: var(--b-shadow);
-    border-radius: 1%;
+    border-radius: var(--b-radius);
     width: 100%;
 }
 
@@ -176,14 +163,7 @@ img{
 
 section{
     margin:0.2em;
-    padding: 0.2em;
-}
-
-.hela-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;     
+    padding: 0.2em;   
 }
 
 .flex-panel{
@@ -194,23 +174,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: var(--b-shadow);
-     
-}
-.flex-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.choose-food{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.type-allergy{
-     display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-shadow: var(--b-shadow);    
 }
 
 .mat{
@@ -266,13 +230,8 @@ button:hover{
     flex-wrap: wrap;
     border-radius: var(--b-radius);
     width: 100%;
-}
-
-.sal-fika{
-    width: 00px;
-    margin: 1em;  
-
 }  
+
 .konf-bild{
     filter: blur(1px);
     height: auto;
@@ -283,12 +242,6 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     border-radius: var(--b-radius);
-}
-
-.type-allergy{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2em;
 }
 
 label{
@@ -313,10 +266,7 @@ footer{
 
 li{
     margin: 0.5em;    
-}
 
-li:hover{
-    background-color: rgb(237, 237, 221);
 }
 a:hover{
     background-color: rgb(237, 237, 221);
@@ -402,4 +352,58 @@ input:valid {
 
 :root{
     --b-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .seminar-day {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 16;
+    }
+
+    h4, h5 {
+        font-size: 12;
+    }
+
+}@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .seminar-info {
+        font-size: 16px;
+    }
+
+    .seminar-day {
+        grid-template-columns: 1fr; 
+        padding: 0.5em;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        width: 100%; 
+        margin-bottom: 1em;
+    }
+
+    form {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .input-large {
+        width: 100%; 
+    }
 }
