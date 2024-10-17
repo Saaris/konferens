@@ -1,6 +1,4 @@
-
-
- *{
+*{
     box-sizing: border-box;
     margin: 0;
 }
@@ -26,6 +24,7 @@ ul{
     list-style: none; 
     box-shadow: var(--b-shadow);
     font-size: large;
+    border-radius: var(--b-radius);
 }
 body{
     font-family: 'Helvetica', sans-serif;
@@ -132,11 +131,16 @@ p{
 
 .mer-info{
     display: flex;
-    flex-wrap: wrap;
-    box-shadow: var(--b-shadow);
+    flex-wrap: wrap; 
     border-radius: var(--b-radius);
     width: 100%;
     padding:1em;
+}
+.info-sem{
+    box-shadow: var(--b-shadow);
+    border-radius: var(--b-radius);
+    padding: 1em;
+    margin: 0.5em;
 }
 
 .image-container{
@@ -175,7 +179,8 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: var(--b-shadow);    
+    box-shadow: var(--b-shadow); 
+    border-radius: var(--b-radius);   
 }
 
 .mat{
@@ -262,7 +267,6 @@ footer{
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-top: 1em;
     box-shadow: var(--b-shadow);
 }
 
@@ -330,7 +334,6 @@ input:valid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 10px solid rgba(225, 207, 174, 0.354)
 }
 
 .formular{
@@ -410,8 +413,9 @@ input:valid {
     }
 }
 #sociala{
-    display: flex;
-    align-items: flex-end;  
+    padding-top: 1em;  
+    gap: 1em;
+    list-style-type: none;
 
 }
 .icons{
@@ -421,4 +425,11 @@ input:valid {
 }i:hover{
     background-color: rgb(237, 237, 221);
     cursor: pointer;
+}
+#cont{
+    box-shadow: none;
+}
+.end{
+    font-size: medium;
+    background-color: 0;
 }
