@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    
 }
 
 header{
@@ -8,6 +8,7 @@ header{
     margin: 0.5em;
     padding: 0.5em;
     background-color: beige;
+    border-bottom: 0.5px solid rgb(220, 216, 216);
 }
  
 nav{
@@ -26,17 +27,19 @@ ul{
     font-size: large;
     border-radius: var(--b-radius);
 }
+
 body{
     font-family: 'Helvetica', sans-serif;
     background: rgb(248, 244, 224);
     width: 100%;
     line-height: 1.6;
+    margin:0;
+    padding: 0;
 
 }
- main{
-    padding: 0em;
+main{
+    padding: 0;
     height: auto;
-
 }
  
 .seminar-pic{
@@ -71,37 +74,26 @@ h2{
     text-align: center;
     padding-top: 1em;
     width: 50%;
+    text-decoration-line: underline;
 }
 
 h3{
     font-size: 20px;
     color: rgb(21, 20, 20);
-    padding-left: 2em;
-    padding-top: 1em;
+    padding-left: 1em;
 }
+
 h4{
     color: rgb(21, 20, 20);
-    font-size: 24px;
+    font-size: 18px;
     padding-left: 1em;
-} 
-
-h5{
-    height: 40px;
-    color: rgb(21, 20, 20);
-    font-size: 20px;
-    padding-left: 1.2em;
-}
-
-h6{
-    padding: 1em;
-    font-size: 20px;
 }
 
 p{
     font-size: 20px;
     background-color: rgb(247, 244, 233);
-    margin: 1em;
-    padding: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
 } 
 
 .gothia-image{
@@ -161,6 +153,7 @@ img{
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    filter: blur(1px);
 }
 
 .info{
@@ -184,14 +177,22 @@ section{
     box-shadow: var(--b-shadow); 
     border-radius: var(--b-radius);   
 }
-.flex-panel-rub{
-    box-shadow: none;
+#register h2{
+    padding-bottom: 1em;
 }
 
 .mat{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+.mat div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 6px;
+
 }
 
 .days{
@@ -201,6 +202,7 @@ section{
     padding: 0.3em;
     margin: 0.3em;
     gap: 0.5em;
+    justify-content: center;
  }    
  
 .dag-column{
@@ -246,7 +248,6 @@ button:hover{
 }  
 
 .konf-bild{
-    filter: blur(1px);
     height: auto;
     width: 50%;
 }
@@ -274,10 +275,17 @@ footer{
     align-items: center;
     justify-content: center;
     position: absolute;
-    box-shadow: var(--b-shadow);
+    border-top: 0.5px solid rgb(220, 216, 216);
+    margin: 0;
 }
+
 footer h2{
-    font-size: 18px
+    font-size: 18px;
+    text-decoration-line: none;
+    margin: 0%;
+}
+footer #cont{
+    margin:0;
 }
 
 li{
@@ -306,7 +314,7 @@ input{
 
 .input-large{
     height: 2.5em;
-    width: 40%;
+    width: 50%;
     font-size: large;      
 }
 
@@ -334,7 +342,7 @@ input:valid {
 }
 
 #register{
-    width: 50%;
+    width: 60%;
     height: auto;
     padding: 1em;
     margin: 1em;
@@ -369,14 +377,11 @@ input:valid {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 1px solid hotpink;
     padding: 1em;
-    margin: 1em;
-    box-shadow: var(--b-shadow);
+    margin: 0;
 }
 .findus{
-    box-shadow: var(--b-shadow);
-    width: 50%;
+    width: 100%;
     margin: 1em;
     padding: 1em;
     border-radius: var(--b-radius);
@@ -384,17 +389,29 @@ input:valid {
     flex-direction: column;
 }
 .form-findus .findus p{
-    padding: 0.5em;
-    margin: 0.5em;
+    gap: 1em;
+    margin-top: 0.5em;
     font-size: 18px;
 }
 .form-findus .findus h4{
     padding-top: 0.5em;
 }
-.findus h3{
-    margin-bottom: 1em;
-    padding-left: 0%;
+.findus h2{
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+    padding-bottom: 1em;
 }
+.findus h3{
+    margin: 1em;
+    padding: 0;
+    text-align: center;
+}
+.findus p{
+    text-align: center;
+
+}
+
 #map{
     width: 100%;
     height: auto;
@@ -425,11 +442,42 @@ input:valid {
 
     h2 {
         width: 100%;
-        font-size: 16;
+        font-size: 16px;
+    }
+    h3{
+        font-size: 16px;
     }
 
-    h4, h5 {
-        font-size: 12;
+    h4 {
+        font-size: 14px;
+    }
+
+    .mat{
+        flex-direction: column;
+    }
+    #register{
+        width: 100%;
+    }
+    .info-sem p {
+        font-size: 16px;
+    }
+    .konf-sal p {
+        font-size: 16px;
+    }
+    .form-findus #register h2{
+        font-size: 16px;
+    }
+    .form-findus #register p {
+        font-size: 16px;
+    }
+    .form-findus #register label {
+        font-size: 16px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    a{
+        font-size: 18px;
     }
 
 }@media (max-width: 480px) {
@@ -444,7 +492,7 @@ input:valid {
     }
 
     .seminar-info {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .seminar-day {
@@ -463,7 +511,9 @@ input:valid {
 
     form {
         width: 100%;
-        font-size: 16px;
+    }
+    .findus{
+        width: 100%;
     }
 
     .input-large {
@@ -474,8 +524,33 @@ input:valid {
         display: flex;
         flex-direction: column;
     }
-    .findus h4 h5{
-        font-size: small;
+
+    footer h2{
+        font-size: 16px;
+    }
+    #cont li{
+        font-size: 16px;
+    }
+    .findus h2 h3 p{
+        font-size: 16px;
+    }
+    #register{
+        width: 100%;
+        margin: 0;
+    }
+    .seminar-info p{
+        font-size: 16px;
+    }
+    .dag-column{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mat{
+        flex-direction: column;
+    }
+    .form-findus{
+        margin: 0;
+        padding: 0;
     }
 }
 #sociala{
@@ -494,8 +569,11 @@ input:valid {
 }
 #cont{
     box-shadow: none;
+    
 }
 .end{
     font-size: medium;
-    background-color: 0;
+    background:none;
+    margin: 0;
+    text-align: center;
 }

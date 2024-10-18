@@ -173,26 +173,26 @@
     <section class="form-findus">
     <!-- formuläret -->
     <form id="register">
-            <div class="flex-panel-rub">
                 <h2>Fyll i formulär för anmälan</h2>
-            </div>
-            
             <div class="flex-panel">
                 <label for="name">För och efteramn:</label>
                 <input type="text" placeholder="namn.." id="name" required class="input-large" maxlength="50">
             </div>
        
             <div class="flex-panel">
-                <label for="checkbox">Vilka dagar</label>
+                <h3>Vilka dagar</h3>
                 <section class="days">
                     <div class="dag-column">
-                     <input type="checkbox" class="input-small" required>2024-10-18
+                     <input type="checkbox" class="input-small" required id="checkbox">
+                     <label for="checkbox">2024-10-18</label>
                     </div>
                      <div class="dag-column">
-                    <input type="checkbox" class="input-small" required>2024-10-19
+                    <input type="checkbox" class="input-small" required id="checkbox2">
+                    <label for="checkbox2">2024-10-19</label>
                     </div>
                     <div class="dag-column">
-                    <input type="checkbox" class="input-small" required>2024-10-20
+                    <input type="checkbox" class="input-small" required id="checkbox3">
+                    <label for="checkbox3">2024-10-20</label>
                     </div>
                 </section>
             </div>
@@ -210,13 +210,12 @@
             <div class="flex-panel">
                 <h3>Önskemål av mat:</h3>
             <div class="mat">
-                <label for="fish">Fisk</label>
-                <input type="radio" name="food" id="fish">
-                <label for="meat">Kött</label>
-                <input type="radio" name="food" id="meat">
-                <label for="veg">Vegetariskt</label>
-                <input type="radio" name="food" id="veg">
-            </div>
+                <div><label for="fish">Fisk</label>
+                    <input type="radio" name="food" id="fish"></div>
+                <div><label for="meat">Kött</label>
+                    <input type="radio" name="food" id="meat"></div>
+                <div><label for="veg">Veganskt</label>
+                    <input type="radio" name="food" id="veg"></div>
             </div>
 
             <div class="flex-panel">
