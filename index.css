@@ -7,6 +7,7 @@ header{
     width: 100%;
     margin: 0.5em;
     padding: 0.5em;
+    background-color: beige;
 }
  
 nav{
@@ -75,7 +76,7 @@ h2{
 h3{
     font-size: 20px;
     color: rgb(21, 20, 20);
-    padding-left: 1.5em;
+    padding-left: 2em;
     padding-top: 1em;
 }
 h4{
@@ -98,7 +99,7 @@ h6{
 
 p{
     font-size: 20px;
-    background-color: rgb(248, 244, 224);
+    background-color: rgb(247, 244, 233);
     margin: 1em;
     padding: 1em;
 } 
@@ -117,7 +118,7 @@ p{
     border-radius: 1%;
     box-shadow: var(--b-shadow);
     margin: 0.5em;
-    border: 1px solid rgb(248, 244, 224);
+
 }
 
 .seminar-info{
@@ -126,6 +127,8 @@ p{
     padding: 0.5em;
     height: 100%;
     border-radius: var(--b-radius); 
+    background-color: rgb(248, 244, 224);
+
 }
 
 .mer-info{
@@ -181,6 +184,9 @@ section{
     box-shadow: var(--b-shadow); 
     border-radius: var(--b-radius);   
 }
+.flex-panel-rub{
+    box-shadow: none;
+}
 
 .mat{
     display: flex;
@@ -235,6 +241,7 @@ button:hover{
     flex-wrap: wrap;
     border-radius: var(--b-radius);
     width: 100%;
+    box-shadow: var(--b-shadow);
 }  
 
 .konf-bild{
@@ -323,13 +330,13 @@ input:valid {
 }
 
 #register{
-    width: 75%;
+    width: 50%;
     height: auto;
     padding: 1em;
     margin: 1em;
     font-size: 18px;
     box-shadow: var(--b-shadow);
-    background: var(--bg-color);
+    background-color: rgb(248, 244, 224);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -345,17 +352,36 @@ input:valid {
 }
 .form-findus{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-#map{
-    width: 40%;
-    height: 40%;
-    border-radius: var(--b-radius);
-    padding: 0%;
-
-
+    width: 100%;
 }
+.findus{
+    box-shadow: var(--b-shadow);
+    width: 50%;
+    margin: 1em;
+    padding: 1em;
+    border-radius: var(--b-radius);
+    display: flex;
+    flex-direction: column;
+}
+.form-findus .findus p{
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: 18px;
+}
+.form-findus .findus h4{
+    padding-top: 0.5em;
+}
+.findus h4{
+    margin-bottom: 1em;
+}
+#map{
+    width: 100%;
+    height: auto;
+    border-radius: var(--b-radius);
+    padding: 0.5em;
 }
 
 :root{
@@ -446,4 +472,3 @@ input:valid {
 .end{
     font-size: medium;
     background-color: 0;
-}
