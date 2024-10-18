@@ -177,7 +177,7 @@ section{
     width: 100%;
     height: auto;
     margin: 0.5em;
-    padding: 0.5em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,7 +211,7 @@ section{
     gap: 0.3em;
     border: 1px solid rgb(228, 225, 205);
     margin: 0.2em;
-    font-size: larger;
+    font-size: 18px;
     
 }
 button{
@@ -242,6 +242,7 @@ button:hover{
     border-radius: var(--b-radius);
     width: 100%;
     box-shadow: var(--b-shadow);
+    padding: 1em;
 }  
 
 .konf-bild{
@@ -259,7 +260,7 @@ button:hover{
 
 label{
     margin: 0.5em;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(21, 20, 20);
     font-weight:bold;
 }
@@ -274,6 +275,9 @@ footer{
     justify-content: center;
     position: absolute;
     box-shadow: var(--b-shadow);
+}
+footer h2{
+    font-size: 18px
 }
 
 li{
@@ -342,6 +346,15 @@ input:valid {
     align-items: center;
     border-radius: var(--b-radius);
 }
+#register h2{
+    font-size: 20px;
+}
+
+#register h3{
+    padding-left: 0;
+    font-size: 18px;
+    padding: 0.5em
+}
 
 .formular{
     height: auto;
@@ -356,6 +369,10 @@ input:valid {
     justify-content: center;
     align-items: center;
     width: 100%;
+    border: 1px solid hotpink;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: var(--b-shadow);
 }
 .findus{
     box-shadow: var(--b-shadow);
@@ -374,8 +391,9 @@ input:valid {
 .form-findus .findus h4{
     padding-top: 0.5em;
 }
-.findus h4{
+.findus h3{
     margin-bottom: 1em;
+    padding-left: 0%;
 }
 #map{
     width: 100%;
@@ -451,6 +469,14 @@ input:valid {
     .input-large {
         width: 100%; 
     }
+
+    .button-panel{
+        display: flex;
+        flex-direction: column;
+    }
+    .findus h4 h5{
+        font-size: small;
+    }
 }
 #sociala{
     padding-top: 1em;  
@@ -472,3 +498,4 @@ input:valid {
 .end{
     font-size: medium;
     background-color: 0;
+}
