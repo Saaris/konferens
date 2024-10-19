@@ -170,8 +170,8 @@
         </div>  
     </section> 
     
-    <section class="form-findus">
     <!-- formuläret -->
+    <section class="form-findus">
     <form id="register">
                 <h2>Fyll i formulär för anmälan</h2>
             <div class="flex-panel">
@@ -209,13 +209,22 @@
             
             <div class="flex-panel">
                 <h3>Önskemål av mat:</h3>
-            <div class="mat">
-                <div><label for="fish">Fisk</label>
-                    <input type="radio" name="food" id="fish"></div>
-                <div><label for="meat">Kött</label>
-                    <input type="radio" name="food" id="meat"></div>
-                <div><label for="veg">Veganskt</label>
-                    <input type="radio" name="food" id="veg"></div>
+                <div class="mat">
+                    <div>
+                        <input type="radio" name="food" id="fish">
+                        <label for="fish">Fisk</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="food" id="meat">
+                        <label for="meat">Kött</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="food" id="veg">
+                        <label for="veg">Veganskt</label>
+                    </div>
+                </div>
             </div>
 
             <div class="flex-panel">
@@ -223,11 +232,14 @@
                 <input type="text" class="input-large" id="allergy" placeholder="gluten.." name="allergy" maxlength="30">
             </div>
 
-            <div class="button-panel">
-                <button type="submit">Skicka</button>
-                <button type="reset">Rensa</button>
+            <div class="flex-panel">
+                 <div class="button-panel">
+                    <button type="submit">Skicka</button>
+                    <button type="reset">Rensa</button>
+                </div>
             </div>
         </form>
+
             <section class="findus">
                 <h2>Vägbeskrivning</h2>
                 <p><strong>Med kollektivtrafik</strong>
@@ -244,9 +256,9 @@
                     Närmsta parkeringsgarage ligger i fokushuset ett stenkast från Svenska Mässan.</p>
                 
                 <h3>Hitta till oss</h3>
-        <img src="images/karta.jpg" alt="vägbeskrivning" id="map">
+                <img src="images/karta.jpg" alt="vägbeskrivning" id="map">
             </section>
-    </section>
+        </section>
   </main>
     <footer>
         <h2>För mer information kontakta oss på:</h2>

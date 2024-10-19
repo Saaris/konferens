@@ -5,10 +5,9 @@
 
 header{
     width: 100%;
-    margin: 0.5em;
     padding: 0.5em;
     background-color: beige;
-    border-bottom: 0.5px solid rgb(220, 216, 216);
+    border-bottom: 1.5px solid rgb(220, 216, 216);
 }
  
 nav{
@@ -23,7 +22,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none; 
-    box-shadow: var(--b-shadow);
+    justify-content: center;
     font-size: large;
     border-radius: var(--b-radius);
 }
@@ -40,6 +39,7 @@ body{
 main{
     padding: 0;
     height: auto;
+    margin: 0;
 }
  
 .seminar-pic{
@@ -67,6 +67,7 @@ h1{
     font-size: 40px;
     text-align: center;
 }
+
 h2{
     color: rgb(21, 20, 20);
     font-size: 24px; 
@@ -85,7 +86,7 @@ h3{
 
 h4{
     color: rgb(21, 20, 20);
-    font-size: 18px;
+    font-size: 18px;;
     padding-left: 1em;
 }
 
@@ -174,9 +175,10 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: var(--b-shadow); 
-    border-radius: var(--b-radius);   
+    border-radius: var(--b-radius); 
+    border: 2.5px solid rgb(220, 216, 216);  
 }
+
 #register h2{
     padding-bottom: 1em;
 }
@@ -185,14 +187,6 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-.mat div{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    gap: 6px;
-
 }
 
 .days{
@@ -231,6 +225,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
      
 }
 button:hover{
@@ -242,9 +237,13 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     border-radius: var(--b-radius);
-    width: 100%;
     box-shadow: var(--b-shadow);
     padding: 1em;
+    margin: 0;
+    width: 96%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2em;
 }  
 
 .konf-bild{
@@ -275,7 +274,7 @@ footer{
     align-items: center;
     justify-content: center;
     position: absolute;
-    border-top: 0.5px solid rgb(220, 216, 216);
+    border-top: 1.5px solid rgb(220, 216, 216);
     margin: 0;
 }
 
@@ -353,6 +352,7 @@ input:valid {
     flex-direction: column;
     align-items: center;
     border-radius: var(--b-radius);
+    border: 2.5px solid rgb(220, 216, 216);
 }
 #register h2{
     font-size: 20px;
@@ -381,12 +381,15 @@ input:valid {
     margin: 0;
 }
 .findus{
-    width: 100%;
+    width: 60%;
     margin: 1em;
     padding: 1em;
     border-radius: var(--b-radius);
     display: flex;
     flex-direction: column;
+    border: 2.5px solid rgb(220, 216, 216);
+    box-shadow: var(--b-shadow);
+    
 }
 .form-findus .findus p{
     gap: 1em;
@@ -439,13 +442,22 @@ input:valid {
         grid-template-columns: 1fr;
         gap: 1em;
     }
+    a {
+        font-size: 20px;
+    }
 
     h2 {
         width: 100%;
-        font-size: 16px;
+        font-size: 20px;
     }
-    h3{
-        font-size: 16px;
+    h3 p {
+        font-size: 18px;
+    }
+    .seminar-info h3{
+        font-size: 18px;
+    }
+    .seminar-info p{
+        font-size: 18px;
     }
 
     h4 {
@@ -455,29 +467,47 @@ input:valid {
     .mat{
         flex-direction: column;
     }
+
     #register{
         width: 100%;
     }
+
     .info-sem p {
         font-size: 16px;
     }
+
+    .info-sem h2{
+        font-size: 18px;
+    }
+
     .konf-sal p {
         font-size: 16px;
     }
+
     .form-findus #register h2{
         font-size: 16px;
     }
     .form-findus #register p {
         font-size: 16px;
     }
+
     .form-findus #register label {
         font-size: 16px;
     }
+
     h1{
         font-size: 30px;
     }
+
     a{
         font-size: 18px;
+    }
+
+    li{
+        font-size: 16px;
+    }
+    .days{
+        flex-direction: column;
     }
 
 }@media (max-width: 480px) {
@@ -489,6 +519,7 @@ input:valid {
         flex-direction: column;
         width: 100%;
         text-align: center;
+        padding: 0;
     }
 
     .seminar-info {
@@ -515,6 +546,9 @@ input:valid {
     .findus{
         width: 100%;
     }
+    .form-findus .findus p {
+        font-size: 16px;
+    }
 
     .input-large {
         width: 100%; 
@@ -523,34 +557,54 @@ input:valid {
     .button-panel{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
+    button{
+        font-size: 18px;
+    }
+        
     footer h2{
         font-size: 16px;
     }
+
     #cont li{
         font-size: 16px;
     }
-    .findus h2 h3 p{
+
+    .form-findus .findus h2{
+        font-size: 18px;
+    }
+
+    .form-findus .findus h3{
         font-size: 16px;
     }
+
     #register{
         width: 100%;
         margin: 0;
     }
+
     .seminar-info p{
         font-size: 16px;
     }
+
     .dag-column{
         flex-direction: column;
         align-items: center;
     }
+
     .mat{
         flex-direction: column;
     }
+
     .form-findus{
         margin: 0;
         padding: 0;
+    }
+
+    .konf-sal{
+        margin: 0;
     }
 }
 #sociala{
